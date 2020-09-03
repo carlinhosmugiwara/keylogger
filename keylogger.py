@@ -1,5 +1,6 @@
 import pynput
-from pynput.keyboard import Key, Listener
+# if you're on a mac, make sure to enable the permission in settings-->security
+from pynput.keyboard import Key, Listener 
 
 pressed_keys = [] # list to store pressed keys
 count = 0 # count to update the file and reset both count and pressed_keys list
